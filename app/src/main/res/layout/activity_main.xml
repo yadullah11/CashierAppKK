@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#051255"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="King Kebab"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroupKebab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTitle"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="20dp"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+
+        <RadioButton
+            android:id="@+id/radioButtonOriginal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Original Kebab"
+            android:textColor="@color/white"
+            />
+
+        <RadioButton
+            android:id="@+id/radioButtonCheese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cheese Kebab"
+            android:textColor="@color/white"
+            />
+
+        <RadioButton
+            android:id="@+id/radioButtonBeef"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Beef Kebab"
+            android:textColor="@color/white"
+            />
+    </RadioGroup>
+
+
+    <RadioGroup
+        android:id="@+id/radioGroupMember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextQuantity"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButtonRegular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="Regular"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/white"
+            />
+
+        <RadioButton
+            android:id="@+id/radioButtonGold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gold"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/white"
+            />
+
+        <RadioButton
+            android:id="@+id/radioButtonPlatinum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Platinum"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/white"
+            />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/editTextQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGroupKebab"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="25dp"
+        android:height="48dp"
+        android:hint="Jumlah"
+        android:inputType="number"
+        android:textColor="@color/white"
+        />
+
+    <Button
+        android:id="@+id/buttonOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextQuantity"
+        android:layout_marginTop="130dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:text="Order"
+        android:textColor="@color/white"
+        />
+
+
+</RelativeLayout>

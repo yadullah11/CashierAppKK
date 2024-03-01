@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">tugaspb</string>
+    <string name="topping">topping</string>
+    <string name="jumlah">jumlah</string>
+    <string name="harga">harga</string>
+    <string name="total">TOTAL</string>
+    <string name="silver">SILVER</string>
+    <string name="gold">GOLD</string>
+    <string name="platinum">PLATINUM</string>
+</resources>
